@@ -1,0 +1,35 @@
+.text-container {
+	align-self: center;
+	margin: 0 auto 0 0;
+
+	h1 {
+		max-width: 70%;
+		font-size: 2.5rem;
+		line-height: 3.5rem;
+		margin: 0 0 2rem 0;
+	}
+
+	p {
+		max-width: 60%;
+		margin: 0 0 2rem 0;
+	}
+}
+
+.form-top {
+	max-width: 75%;
+	.email {
+		min-width: 50%;
+		font-size: 0.9rem;
+		border: 0.1rem solid $primary-color;
+		border-radius: $rounded;
+		padding: 0.5rem;
+		margin: 0 1rem 0 0;
+	}
+}
+.illustration {
+	max-width: 50%;
+	margin: 0 0 0 auto;
+	img {
+		max-width: 100%;
+	}
+}

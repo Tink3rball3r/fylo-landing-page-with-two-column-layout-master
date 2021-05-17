@@ -29,6 +29,10 @@ img {
 	display: block;
 }
 
+section {
+	margin: 4rem 0;
+}
+
 .container {
 	max-width: 90%;
 	margin: 0 auto;
@@ -37,5 +41,20 @@ img {
 .flex {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+}
+
+.email {
+	display: block;
+	border: none;
+	outline: none;
+	text-indent: 1rem;
+}
+
+.cta {
+	font-size: 0.9rem;
+	border: none;
+	border-radius: $rounded;
+	padding: 0.6rem 1.6rem;
+	background-color: $cta-background;
+	color: #fff;
 }
