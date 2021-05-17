@@ -25,6 +25,9 @@ h2,
 .cta {
 	font-family: 'Raleway', sans-serif;
 }
+img {
+	display: block;
+}
 
 .container {
 	max-width: 90%;
@@ -34,4 +37,5 @@ h2,
 .flex {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
