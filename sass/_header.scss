@@ -1,0 +1,16 @@
+header {
+	margin: 4rem 0 0 0;
+
+	.header__logo {
+		margin: 0 auto 0 0;
+	}
+
+	.header__nav {
+		display: inline-flex;
+		gap: 3rem;
+
+		a {
+			color: $primary-color;
+		}
+	}
+}
