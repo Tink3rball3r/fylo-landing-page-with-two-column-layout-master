@@ -1,0 +1,45 @@
+.sec2 {
+	background-color: $background-color2;
+	padding-bottom: 5rem;
+
+	.sec2__link {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 25%;
+		border-bottom: 0.1rem solid $sec2-link;
+		margin: 0 0 4rem 0;
+
+		& a {
+			color: $sec2-link;
+		}
+	}
+
+	.testimonial {
+		max-width: 60%;
+		padding: 2rem;
+		background-color: #fff;
+		border-radius: $rounded;
+		box-shadow: 5px 5px 14px -7px #000000;
+
+		p {
+			padding: 0;
+			margin: 1rem 0;
+		}
+
+		.user {
+			display: flex;
+			align-items: center;
+
+			img {
+				max-width: 12%;
+				border-radius: 50%;
+				margin: 0 1rem 0 0;
+			}
+
+			p {
+				margin: 0.3rem 0 0 0;
+			}
+		}
+	}
+}

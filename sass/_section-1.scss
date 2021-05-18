@@ -20,10 +20,11 @@
 	}
 
 	.cta {
-		background-color: $cta-background;
 		color: #fff;
 		padding: 0.5rem 1.5rem;
 		font-weight: 700;
+		background-color: $cta-background;
+		box-shadow: 5px 5px 14px -7px #000000;
 	}
 
 	.error {
