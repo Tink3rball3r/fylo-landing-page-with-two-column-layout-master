@@ -4,18 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="CSS/main.css">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
-
 </head>
 
 <body>
-
   <header>
-    <div class="container flex">
+    <div class="header__container">
       <div class="header__logo">
         <img src="/images/logo.svg" alt="company logo">
       </div>
@@ -28,24 +24,63 @@
   </header>
 
   <section>
-    <div class="section-1">
-      <div class="container flex">
-        <div class="text-container">
+    <div class="sec1">
+      <div class="sec1__container">
+        <div class="text">
           <h1>All your files in one secure location, accessible anywhere.</h1>
           <p>Fylo stores your most important files in one secure location.
             Access them wherever you need, share and collaborate with friends,
             family, and co-workers.</p>
-          <form class=" form-top flex" action="">
+          <form class=" sec1__form" action="">
             <input class="email" type="email" placeholder="Enter your email...">
+            <p class="error">Please check your email</p>
             <input class="cta" type="submit" value="Get Started">
           </form>
         </div>
-        <div class="illustration">
+        <div class="sec1__img">
           <img src="/images/illustration-1.svg" alt="">
         </div>
       </div>
     </div>
   </section>
+  <!-- <div class="sec2__wave">
+    <picture>
+      <source media="(min-width:650px)" srcset="/images/bg-curve-mobile.svg">
+      <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+      <img src="/images/bg-curve-desktop.svg">
+  </div>
+  <section>
+    <div class="sec2">
+      <div class="sec2__container">
+        <div class="text-container">
+          <h1>Stay productive, wherever you are</h1>
+          <p>Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.</p>
+          <p>Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!</p>
+          <div class="sec2__link">
+            <a href="#">See how Fylo works </a>
+            <img src="/images/icon-arrow.svg" alt="">
+          </div>
+          <div class="testimonial">
+            <img src="/images/icon-quotes.svg" alt="">
+            <p>Fylo has improved our team productivity by an order of magnitude. Since
+              making the switch our team has become a well-oiled collaboration machine.</p>
+            <div class="user">
+              <img src="/images/avatar-testimonial.jpg" alt="">
+              <div class="user__info">
+                <h3>Kyle Burton</h3>
+                <p>Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec2__img">
+          <img src="/images/illustration-2.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section> -->
 
 
 

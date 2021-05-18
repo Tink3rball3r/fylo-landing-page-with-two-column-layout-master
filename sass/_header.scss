@@ -1,45 +1,57 @@
 header {
-	margin: 4rem 0 0 0;
-
-	.header__logo {
-		margin: 0 auto 0 0;
-
-		img {
-			max-width: 100%;
-		}
-	}
+	margin: 4rem 0 5rem 0;
 
 	.header__nav {
-		display: inline-flex;
-		align-items: center;
-		gap: 3rem;
+		align-self: center;
+		margin: 0 0 0 auto;
 
-		a {
-			color: $primary-color;
+		gap: 2rem;
+
+		& a {
+			font-size: 1.2rem;
 		}
 	}
 }
 
 @media only screen and (max-width: 1200px) {
+	/* fix later*/
 	/*Tablets [601px -> 1200px]*/
+
 	header {
-		margin: 2rem 0 0 0;
 		.header__logo {
-			img {
-				width: 50%;
-			}
+			max-width: 30%;
 		}
+		margin: 2rem 0 3rem 0;
+
 		.header__nav {
 			gap: 1rem;
+			align-self: center;
+
+			& a {
+				font-size: 1rem;
+			}
 		}
 	}
 }
+
 @media only screen and (max-width: 600px) {
 	/*Big smartphones [426px -> 600px]*/
 }
 @media only screen and (max-width: 425px) {
 	/*Small smartphones [325px -> 425px]*/
-	header .header__nav a {
-		font-size: 0.6rem;
+	header {
+		.header__logo {
+			max-width: 30%;
+		}
+		margin: 2rem 0 3rem 0;
+
+		.header__nav {
+			gap: 1rem;
+			align-self: flex-start;
+
+			& a {
+				font-size: 1rem;
+			}
+		}
 	}
 }

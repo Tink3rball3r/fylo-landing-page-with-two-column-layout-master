@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
 body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,90 +17,103 @@ body {
 }
 
 a {
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  color: #070439;
+}
+
+h1,
+h2 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  padding: 0 5rem 0 0;
 }
 
 h1,
 h2,
-.cta {
+a {
   font-family: 'Raleway', sans-serif;
 }
 
+p {
+  padding: 0 10rem 0 0;
+}
+
 img {
-  display: block;
+  width: 100%;
 }
 
-section {
-  margin: 4rem 0;
+input {
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 0.9rem;
+  outline: none;
 }
 
-.container {
+.header__container,
+.header__nav,
+.sec1__container,
+.sec2__container,
+.sec3__container,
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 90%;
   margin: 0 auto;
 }
 
-.flex {
+.header__logo {
+  /*maybe move to header partial*/
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.email {
-  display: block;
-  border: none;
-  outline: none;
-  text-indent: 1rem;
-}
-
-.cta {
-  font-size: 0.9rem;
-  border: none;
-  border-radius: 0.3rem;
-  padding: 0.6rem 1.6rem;
-  background-color: #3065f8;
-  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header {
-  margin: 4rem 0 0 0;
-}
-
-header .header__logo {
-  margin: 0 auto 0 0;
-}
-
-header .header__logo img {
-  max-width: 100%;
+  margin: 4rem 0 5rem 0;
 }
 
 header .header__nav {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 3rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 0 0 auto;
+  gap: 2rem;
 }
 
 header .header__nav a {
-  color: #070439;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 1200px) {
+  /* fix later*/
   /*Tablets [601px -> 1200px]*/
   header {
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 3rem 0;
   }
-  header .header__logo img {
-    width: 50%;
+  header .header__logo {
+    max-width: 30%;
   }
   header .header__nav {
     gap: 1rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  header .header__nav a {
+    font-size: 1rem;
   }
 }
 
@@ -108,49 +123,57 @@ header .header__nav a {
 
 @media only screen and (max-width: 425px) {
   /*Small smartphones [325px -> 425px]*/
+  header {
+    margin: 2rem 0 3rem 0;
+  }
+  header .header__logo {
+    max-width: 30%;
+  }
+  header .header__nav {
+    gap: 1rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
   header .header__nav a {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
 }
 
-.text-container {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 0 auto 0 0;
+.sec1__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 1rem 0 0 0;
 }
 
-.text-container h1 {
-  max-width: 70%;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
-  margin: 0 0 2rem 0;
-}
-
-.text-container p {
-  max-width: 60%;
-  margin: 0 0 2rem 0;
-}
-
-.form-top {
-  max-width: 75%;
-}
-
-.form-top .email {
-  min-width: 50%;
-  font-size: 0.9rem;
-  border: 0.1rem solid #070439;
-  border-radius: 0.3rem;
-  padding: 0.5rem;
+.sec1__form .email {
+  text-indent: 1rem;
+  width: 50%;
+  padding: 0.5rem 0;
   margin: 0 1rem 0 0;
+  border: 0.1rem solid #070439;
 }
 
-.illustration {
-  max-width: 50%;
-  margin: 0 0 0 auto;
+.sec1__form .email:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
 }
 
-.illustration img {
-  max-width: 100%;
+.sec1__form .email:not(:focus):not(:placeholder-shown):invalid ~ .error {
+  display: block;
+}
+
+.sec1__form .cta {
+  background-color: #3065f8;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+}
+
+.sec1__form .error {
+  position: absolute;
+  top: 2.5rem;
+  display: none;
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */
